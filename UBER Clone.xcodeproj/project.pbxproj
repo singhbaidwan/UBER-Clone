@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B6039F028EB609F00040C2F /* MapViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6039EF28EB609F00040C2F /* MapViewState.swift */; };
+		0B6039F328EB6B6800040C2F /* RideRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6039F228EB6B6800040C2F /* RideRequestView.swift */; };
 		0B6206A328E8C73E0028370A /* UBER_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6206A228E8C73E0028370A /* UBER_CloneApp.swift */; };
 		0B6206A728E8C7420028370A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B6206A628E8C7420028370A /* Assets.xcassets */; };
 		0B6206AA28E8C7420028370A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B6206A928E8C7420028370A /* Preview Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		0B6039EF28EB609F00040C2F /* MapViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewState.swift; sourceTree = "<group>"; };
+		0B6039F228EB6B6800040C2F /* RideRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRequestView.swift; sourceTree = "<group>"; };
 		0B62069F28E8C73E0028370A /* UBER Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UBER Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6206A228E8C73E0028370A /* UBER_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBER_CloneApp.swift; sourceTree = "<group>"; };
 		0B6206A628E8C7420028370A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B6039F128EB6B3A00040C2F /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				0B6039F228EB6B6800040C2F /* RideRequestView.swift */,
+			);
+			path = Trips;
+			sourceTree = "<group>";
+		};
 		0B62069628E8C73D0028370A = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 		0B6206B428E8C7880028370A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				0B6039F128EB6B3A00040C2F /* Trips */,
 				0B82B21C28E9FA2200C42DED /* LocationSearch */,
 				0B82B21B28E9FA1700C42DED /* Home */,
 			);
@@ -254,6 +265,7 @@
 				0B82B22A28EA10B400C42DED /* LocationSearchViewModel.swift in Sources */,
 				0B82B22628E9FF2000C42DED /* LocationSearchView.swift in Sources */,
 				0B82B22028E9FA5F00C42DED /* locationSeachActivationView.swift in Sources */,
+				0B6039F328EB6B6800040C2F /* RideRequestView.swift in Sources */,
 				0B6039F028EB609F00040C2F /* MapViewState.swift in Sources */,
 				0B82B22228E9FD6200C42DED /* MapViewActionButton.swift in Sources */,
 				0B6206BD28E8CB120028370A /* LocationManager.swift in Sources */,
