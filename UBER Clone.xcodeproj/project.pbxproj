@@ -22,6 +22,7 @@
 		0B82B22828EA036100C42DED /* LocationSearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82B22728EA036100C42DED /* LocationSearchResultCell.swift */; };
 		0B82B22A28EA10B400C42DED /* LocationSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82B22928EA10B400C42DED /* LocationSearchViewModel.swift */; };
 		0BC23AA028EDF0CC0065D00F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC23A9F28EDF0CC0065D00F /* Double.swift */; };
+		0BC23AA228EDF6980065D00F /* UberLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC23AA128EDF6980065D00F /* UberLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		0B82B22728EA036100C42DED /* LocationSearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchResultCell.swift; sourceTree = "<group>"; };
 		0B82B22928EA10B400C42DED /* LocationSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewModel.swift; sourceTree = "<group>"; };
 		0BC23A9F28EDF0CC0065D00F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		0BC23AA128EDF6980065D00F /* UberLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				0B6039EF28EB609F00040C2F /* MapViewState.swift */,
 				0B5EFC7828ECAE3B00BA730D /* RideType.swift */,
+				0BC23AA128EDF6980065D00F /* UberLocation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				0B6206BD28E8CB120028370A /* locationManager.swift in Sources */,
 				0B6206A328E8C73E0028370A /* UBER_CloneApp.swift in Sources */,
 				0B6206BB28E8C8560028370A /* UberMapViewRepresentable.swift in Sources */,
+				0BC23AA228EDF6980065D00F /* UberLocation.swift in Sources */,
 				0B6206B928E8C8080028370A /* HomeView.swift in Sources */,
 				0B82B22828EA036100C42DED /* LocationSearchResultCell.swift in Sources */,
 				0B5EFC7928ECAE3B00BA730D /* RideType.swift in Sources */,
