@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 struct UberMapViewRepresentable:UIViewRepresentable{
     let mapView = MKMapView()
-    let locationManager = LocationManager()
+    let locationManager = LocationManager.shared
     @Binding var mapState:MapViewState
     @EnvironmentObject var locationViewModel:LocationSearchViewModel
     func makeUIView(context: Context) -> some UIView {
@@ -97,7 +97,7 @@ extension UberMapViewRepresentable{
         func configurePolyline(withDestinationCoordinate coordinate:CLLocationCoordinate2D){
             guard let userLocationCoordinate = self.userLocationCoordinate else {return}
             generateDestinationRoute(from: userLocationCoordinate, to:coordinate) { route in
-                self.parent.mapView.removeOverlays(self.parent.mapView.overlays)
+               
                 self.parent.mapView.addOverlay(route.polyline)
                 let rect = self.parent.mapView.mapRectThatFits(route.polyline.boundingMapRect,edgePadding: .init(top: 64, left: 32, bottom: 500, right: 32))
                 self.parent.mapView.setRegion(MKCoordinateRegion(rect), animated: true)

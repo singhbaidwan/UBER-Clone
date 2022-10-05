@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MapViewActionButton: View {
     @Binding var mapState:MapViewState
+    @EnvironmentObject var viewModel:LocationSearchViewModel
     var body: some View {
         Button {
             withAnimation(.spring())
@@ -36,6 +37,7 @@ struct MapViewActionButton: View {
             mapState = .noInput
         case .locationSelected:
             mapState = .noInput
+            viewModel.selectedLocationCoordinate = nil
         }
     }
     func imageNameForState(_ state:MapViewState)->String{

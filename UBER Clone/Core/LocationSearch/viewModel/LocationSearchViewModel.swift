@@ -11,6 +11,7 @@ class LocationSearchViewModel : NSObject,ObservableObject{
     
     @Published var results = [MKLocalSearchCompletion]()
     @Published var selectedLocationCoordinate : CLLocationCoordinate2D?
+    var userLocation:CLLocationCoordinate2D?
     private let searchCompleter = MKLocalSearchCompleter()
     var queryFragment : String = ""{
         didSet{
@@ -43,6 +44,17 @@ class LocationSearchViewModel : NSObject,ObservableObject{
         searchRequest.naturalLanguageQuery = localSearch.title.appending(localSearch.subtitle)
         let search = MKLocalSearch(request: searchRequest)
         search.start(completionHandler: completion)
+    }
+    func computeRidePrice(fortype type:RideType)->Double{
+        guard let coordinate = selectedLocationCoordinate else {return 0.0}
+        guard let userLocation = userLocation else {
+            return 0.0
+        }
+        
+        let user = CLLocation(latitude: userLocation.latitude, longitude: userLocation.longitude)
+        let destination = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        let tripDistance = user.distance(from: destination)
+        return type.computePrice(for: tripDistance)
     }
 }
 
